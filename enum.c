@@ -15,8 +15,8 @@ int main(void)
 	}
 	
 	int mass[2] = {12,17};
-
 	printf("%d\n",mass[32]);
-
+	// my comment
 	return 0;
+	// end main
 }
