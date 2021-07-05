@@ -34,8 +34,8 @@ int main(void)
 	printf("%d\n",pnt.y);
 	subacc s1;
 	
-	s1.isubacc = "26005183546";
-	s1.subacc_name = "R:BASE";
+	s1.isubacc = "26005183549";
+	s1.subacc_name = "Oracle LTD";
 	subacc *s2 = &s1;
 	//printf("%s\n", (*s2).subacc_name);
 
