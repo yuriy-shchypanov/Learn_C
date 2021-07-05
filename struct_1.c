@@ -31,7 +31,7 @@ struct point AddPoint (struct point p1, struct point p2)
 int main(void)
 {
 	struct point pnt = {1,12};
-	//printf("%d\n",pnt.y);
+	printf("%d\n",pnt.y);
 	subacc s1;
 	
 	s1.isubacc = "26005183545";
