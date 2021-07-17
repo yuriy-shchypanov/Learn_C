@@ -1,24 +1,40 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-int sumofn(int n_args, ...)
+void miniprint(char *fmt, ...)
 {
-	int ret_val = 0;
-
-	va_list pnt;
-	va_start(pnt,n_args);
-	for (int i = 0; i < n_args; i++)
+	va_list ap;
+	//char *ap;
+	char ch;
+	//va_start(ap,fmt);
+	for (va_start(ap,fmt);ap != NULL; va_arg(ap,int))
 	{
-		ret_val += va_arg(pnt, int);
+		printf("%c",*ap);
 	}
-	va_end(pnt);
-
-	return ret_val;
+	
+	/* for(;ch = va_arg(ap,int);)
+	{
+		printf("%d",ch);
+	} */	
+		//putchar(va_arg(ap,int));
+		//putchar(va_arg(ap,int));
+		//printf("%c\n",va_arg(ap,int));
+		//printf("%c\n",va_arg(ap,int));
+		//printf("=%d",va_arg(ap,int));
+	va_end(ap);
 }
 
 int main(void)
 {
-	printf("%d\n", sumofn(3,3,7,9));
-	
+	printf("%s\n","Start programm");
+	miniprint("qaz",'Q','R','W');
+	/* char *str = "Hello Yuriy";
+	char mass[] = "DWnamic"; */
+	//str = mass;
+	//for(;*str != 0;str++)
+	//{
+	//	printf("%c",*str);
+	//}
+	//printf("=%c",*(++str));
 	return 0;
 }
