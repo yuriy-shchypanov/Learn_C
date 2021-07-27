@@ -4,7 +4,6 @@
 char *strcatNT(char *dest, const char *source)
 {
     char *retval = dest;
-
     return retval;
 }
 
