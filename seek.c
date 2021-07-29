@@ -11,5 +11,6 @@ int main(void)
                 printf("%c", ch);
 
     fclose(pf);
+
     return 0;
 }
