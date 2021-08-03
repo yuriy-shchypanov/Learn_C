@@ -51,7 +51,7 @@ char *strconcat(char *dest, const char *source)
 
 int main(void)
 {
-    char *source = "Yuriy ";
+    char *source = "Yuriy";
     char *dest = "Shchypanov";
     char *res;
     res = strconcat(source, dest);
