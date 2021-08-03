@@ -47,9 +47,11 @@ char *strconcat(char *dest, const char *source)
     return retval;
 }
 
+//новая ветка bt-1
+
 int main(void)
 {
-    char *source = "Yuriy ";
+    char *source = "Yuriy";
     char *dest = "Shchypanov";
     char *res;
     res = strconcat(source, dest);
