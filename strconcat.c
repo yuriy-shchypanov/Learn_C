@@ -54,7 +54,7 @@ int main(void)
     char *res;
     res = strconcat(source, dest);
     printf("=%s", res);
-    printf("\nLength=%d", length(res));
+    //printf("\nLength=%d", length(res)); branch hotfix
     free(res);
     return 0;
 }
