@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define eos '\0' //iss53
 
 int main(void)
 {
@@ -11,6 +12,6 @@ int main(void)
                 printf("%c", ch);
 
     fclose(pf);
-
+	printf("==========="); // iss53
     return 0;
 }
