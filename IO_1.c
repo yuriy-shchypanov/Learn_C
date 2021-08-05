@@ -8,5 +8,6 @@ int main(void)
 
 	//printf(ch);
 	printf("%s\n",ch);
+	printf("======="); // hotfix
 	return 0;
 }
